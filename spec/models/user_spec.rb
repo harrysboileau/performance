@@ -48,4 +48,11 @@ describe User do
       user.full_name.should eq 'John Doe'
     end
   end
+
+  describe '.page(page_num)' do
+
+    it 'returns 10 users' do 
+      User.page(3).count.should eq 10 
+    end
+  end
 end

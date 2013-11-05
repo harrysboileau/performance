@@ -10,3 +10,15 @@
     <%= render 'user_row', :user => user %>
   <% end %>
 </table>
+
+<div class="pagination">
+  <ul>
+    <li><a href="/?page=<%= @counter - 5 %>">Prev</a></li>
+    <li><a href="/?page=<%= @counter - 2 %>"><%= @counter - 2 %></a></li>
+    <li><a href="/?page=<%= @counter - 1 %>"><%= @counter - 1 %></a></li>
+    <li><a class="active" href="/?page<%= @counter %>"><%= @counter %></a></li>
+    <li><a href="/?page=<%= @counter + 1 %>"><%= @counter + 1 %></a></li>
+    <li><a href="/?page=<%= @counter + 2 %>"><%= @counter + 2 %></a></li>
+    <li><a href="/?page=<%= @counter + 5 %>">Next</a></li>
+  </ul>
+</div>
